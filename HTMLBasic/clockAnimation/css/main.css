@@ -2,67 +2,43 @@
     width: 400px;
     height: 400px;
     border-radius: 80%;
+    margin: 20px auto;
     border: 5px solid black;
-    transform: translate(750px, 150px);
+    margin: 20px auto;
+    position: relative;
 }
 
 #minute{
-    transform: translate(-2px, 53px);
-    width: 3px;
-    height: 120px;
+    width: 6px;
+    height: 140px;
     background: darkslategray;
-    border: darkslategray solid 1px;
-    margin-left: 198px;
-    margin-top: 22px;
-    animation: minutesGoWee 3600s infinite linear;
+    margin-left: 196px;
+    margin-top: 55px;
+    animation: linesGoWee 3600s infinite linear;
     position: absolute;
 }
 
 #hour{
-    width: 4px;
+    width: 8px;
     height: 100px;
-    border: black solid 2px;
     background: black;
     margin-left: 195px;
-    margin-top: 94px;
-    animation: hourGoWee 43200s infinite linear;
+    margin-top: 96px;
+    animation: linesGoWee 43200s infinite linear;
     position: absolute;
 }
 
 #second{
-    width: 1px;
+    width: 4px;
     height: 175px;
     margin-left: 198px;
     margin-top: 20px;
-    border: gray solid 1px;
     background: gray;
-    animation: secondGoWee 60s infinite linear;
+    animation: linesGoWee 60s infinite linear;
     position: absolute;
 }
 
-@keyframes secondGoWee {
-    0% {
-        transform-origin: center bottom;
-        transform: rotate(0);
-    }
-    100%{
-        transform-origin: center bottom;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes minutesGoWee{
-    0% {
-        transform-origin: center bottom;
-        transform: rotate(0);
-    }
-    100%{
-        transform-origin: center bottom;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes hourGoWee{
+@keyframes linesGoWee {
     0% {
         transform-origin: center bottom;
         transform: rotate(0);
