@@ -1,0 +1,74 @@
+#clock{
+    width: 400px;
+    height: 400px;
+    border-radius: 80%;
+    border: 5px solid black;
+    transform: translate(750px, 150px);
+}
+
+#minute{
+    transform: translate(-2px, 53px);
+    width: 3px;
+    height: 120px;
+    background: darkslategray;
+    border: darkslategray solid 1px;
+    margin-left: 198px;
+    margin-top: 22px;
+    animation: minutesGoWee 3600s infinite linear;
+    position: absolute;
+}
+
+#hour{
+    width: 4px;
+    height: 100px;
+    border: black solid 2px;
+    background: black;
+    margin-left: 195px;
+    margin-top: 94px;
+    animation: hourGoWee 43200s infinite linear;
+    position: absolute;
+}
+
+#second{
+    width: 1px;
+    height: 175px;
+    margin-left: 198px;
+    margin-top: 20px;
+    border: gray solid 1px;
+    background: gray;
+    animation: secondGoWee 60s infinite linear;
+    position: absolute;
+}
+
+@keyframes secondGoWee {
+    0% {
+        transform-origin: center bottom;
+        transform: rotate(0);
+    }
+    100%{
+        transform-origin: center bottom;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes minutesGoWee{
+    0% {
+        transform-origin: center bottom;
+        transform: rotate(0);
+    }
+    100%{
+        transform-origin: center bottom;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hourGoWee{
+    0% {
+        transform-origin: center bottom;
+        transform: rotate(0);
+    }
+    100%{
+        transform-origin: center bottom;
+        transform: rotate(360deg);
+    }
+}
