@@ -1,0 +1,30 @@
+.col-4{
+    color:black;
+    width: 33%;
+}
+
+.col-6{
+    color:paleturquoise;
+    width: 50%;
+}
+
+.col-12{
+    color:palevioletred;
+    width: 100%;
+}
+
+@media (min-width: 765px) and (max-width: 960px){
+    .col-4{
+        width: 50%;
+    }
+
+    .col-6{
+        width: 100%;
+    }
+}
+
+@media (max-width: 765px){
+    .col-4{
+        width: 100%;
+    }
+}
