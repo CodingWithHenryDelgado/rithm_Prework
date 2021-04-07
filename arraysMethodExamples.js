@@ -1,0 +1,13 @@
+let arr = [];
+arr.push("Henry");
+arr.push("Delgado");
+arr.unshift("Red");
+arr.shift();
+let arr2= [];
+arr2.push(98);
+arr2.push("JavaScript");
+console.log(arr);
+console.log(arr2);
+console.log(arr2.indexOf(98));
+let combinedArr = arr.concat(arr2);
+console.log(combinedArr);
